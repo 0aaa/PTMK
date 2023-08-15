@@ -1,0 +1,88 @@
+Anomalies marked by Exclamation sign.
+
+1124 records.
+Before optimization:
+Cold requests:
+
+537.5176 ms
+597.0488 ms
+695.2239 ms
+510.9803 ms
+564.1771 ms
+475.2996 ms
+541.4905 ms
+525.8494 ms
+474.1392 ms
+535.5511 ms
+AVG 545.72775 ms
+
+Hot requests:
+
+161.2619 ms
+139.7067 ms
+371.3239 ms
+190.3328 ms
+137.2133 ms
+133.0465 ms
+172.7666 ms
+262.9783 ms
+132.3585 ms
+147.9401 ms
+AVG 184.89286 ms
+
+After optimization:
+Cold requests.
+LINQ Query by EF Method:
+
+712.0155 ms !
+329.4074 ms
+254.1894 ms
+2846.3501 ms !
+291.8332 ms
+2913.9548 ms !
+289.0225 ms
+262.86 ms
+266.0127 ms
+311.1103 ms
+338.4281 ms
+244.4955 ms
+232.4922 ms
+324.5281 ms
+275.5185 ms
+246.1703 ms
+2711.9551 ms !
+291.1639 ms
+298.7958 ms
+281.3689 ms
+AVG 283.5873 ms
+
+LINQ Query Explicit:
+992.015 ms
+989.0079 ms
+973.1295 ms
+985.718 ms
+956.9562 ms
+924.3208 ms
+973.255 ms
+984.5813 ms
+924.9144 ms
+925.3822 ms
+AVG 962.92803 ms
+
+SqlDataReader:
+416.7033 ms
+331.7699 ms
+345.4472 ms
+333.0646 ms
+307.133 ms
+301.729 ms
+255.3908 ms
+288.6991 ms
+334.6306 ms
+268.4055 ms
+612.0806 ms !
+352.3068 ms
+302.8113 ms
+295.5639 ms
+275.9626 ms
+AVG 314.9727

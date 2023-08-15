@@ -8,6 +8,9 @@ namespace PTMK.Data
     {
         public DbSet<Person> Persons { get; set; }
 
+        public PTMKDbContext()
+            =>Database.EnsureCreated();
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             => optionsBuilder.UseSqlServer("Server=.\\;Initial catalog=PTMKDb;Integrated Security=true;MultipleActiveResultSets=true;App=PTMK;TrustServerCertificate=true");
 
